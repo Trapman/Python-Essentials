@@ -76,7 +76,36 @@ def list_primes():
     if  isprime(n):
       print(n, end =' ', flush = 'True')
 
+# CLASSES ##########################################
+class Duck:
+  def quack(self):         # function 1 inside class (i.e. class variable 1)
+    print("QUACK!!!")
+    
+  def walk(self):          #function 2 inside class (i.e. class variable 2)
+     print("It walks like a duck.")
+      
+  def main():
+    donald = Duck()
+    donald.quack()
+    donald.walk()
+    
+  if __name__ == '__main__': main()
 
+# or you can do it like this
+class Duck:
+  sound = "QUACK!!!"
+  walking = "Walks like a duck.)
+  
+  def quack(self):         # function 1 inside class (i.e. class variable 1)
+    print(self.sound)
+    
+  def walk(self):          #function 2 inside class (i.e. class variable 2)
+     print(self.walking)
+      
+  def main():
+    donald = Duck()
+    donald.quack()
+    donald.walk()    
 
 
 
