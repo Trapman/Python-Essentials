@@ -95,6 +95,7 @@ if __name__ == '__name__': main()
 
 # GENERATORS ###################
 # instead of returning a single value, it returns a stream of values
+# example: build our own version of range() that includes all numbers inclusive
 def main():
     for i in inclusive_range():
         print(i, end = ' ')
@@ -118,7 +119,7 @@ def inclusive_range(*args):
         raise TypeError(f'expected at most 3 arguments, got {numargs}')
         
 # DECORATORS #################
-# specical type of function that returns a wrapper
+# specical type of function that returns a wrapper function
 def f1(f):
     def f2():
         print('this is before the function call')
@@ -144,5 +145,12 @@ def elapsed_time(f):
         
 @elapsed_time
 def big_sum():
-    num_list[]
-        
+    num_list = []
+    for num in range(0, 10000)):
+        num_list.append(num)
+    print(f'Big sum: {sum(num_list)}')
+    
+def main():
+    big_sum()
+    
+if __name__ == '__main__': main()
