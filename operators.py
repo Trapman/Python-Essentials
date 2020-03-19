@@ -26,7 +26,7 @@ y = 7
 z = x + y
 print(z)
 
-# BITWISE OPERATORS ################
+# BITWISE OPERATORS ###################
 # & and
 # | or
 # ^ Xor
